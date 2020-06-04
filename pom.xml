@@ -11,7 +11,7 @@
     <groupId>top.dfghhj.anhanx</groupId>
     <artifactId>anhanx</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Anhanx</name>
+    <name>anhanx</name>
     <packaging>pom</packaging>
 
     <properties>
