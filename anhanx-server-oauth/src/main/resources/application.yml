@@ -4,10 +4,13 @@ server:
 spring:
   main:
     allow-bean-definition-overriding: true
+
   redis:
     host: 127.0.0.1
     port: 6379
     database: 5
+    password: 123456
+
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/anhanx_oauth?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
@@ -19,4 +22,17 @@ spring:
     data: classpath:sql/data.sql
     data-username: root
     data-password: 123456
+
+  thymeleaf:
+    prefix: classpath:templates
+    suffix: .html
+    mode: HTML5
+    cache: false
+    encoding: UTF-8
+    check-template: true
+    check-template-location: true
+    servlet:
+      content-type: text/html
+  mvc:
+    throw-exception-if-no-handler-found: true
 

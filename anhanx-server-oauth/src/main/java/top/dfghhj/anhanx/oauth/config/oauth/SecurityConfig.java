@@ -1,4 +1,4 @@
-package top.dfghhj.anhanx.oauth.config;
+package top.dfghhj.anhanx.oauth.config.oauth;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,7 +31,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().formLogin();
+        http.csrf().disable();
+        http.httpBasic().disable();
+        http.authorizeRequests().antMatchers("/authorize").authenticated();
+        http.formLogin().loginPage("/auth/login").loginProcessingUrl("/oauth/login");
     }
 
     @Override

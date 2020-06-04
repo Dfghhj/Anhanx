@@ -1,4 +1,4 @@
-package top.dfghhj.anhanx.oauth.config;
+package top.dfghhj.anhanx.oauth.config.oauth;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,6 @@ public class AccessTokenConfig {
 
     @Bean
     TokenStore tokenStore() {
-//        return new InMemoryTokenStore();
         return new RedisTokenStore(redisConnectionFactory);
     }
 }

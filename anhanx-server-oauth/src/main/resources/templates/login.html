@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+
+<style>
+    .login-container {
+        margin: 50px;
+        width: 100%;
+    }
+
+    .form-container {
+        margin: 0px auto;
+        width: 50%;
+        text-align: center;
+        box-shadow: 1px 1px 10px #888888;
+        height: 300px;
+        padding: 5px;
+    }
+
+    input {
+        margin-top: 10px;
+        width: 350px;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px #3a8fb7 solid;
+        padding-left: 2px;
+
+    }
+
+
+    .btn {
+        width: 350px;
+        height: 35px;
+        line-height: 35px;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 3px;
+        background-color: #3a8fb7;
+        color: white;
+        border: none;
+        font-size: 15px;
+    }
+
+    .title {
+        margin-top: 5px;
+        font-size: 18px;
+        color: #3a8fb7;
+    }
+</style>
+<body>
+<div class="login-container">
+    <div class="form-container">
+        <p class="title">账号登陆</p>
+        <form action="/oauth/login" method="post" name="loginForm">
+            <input name="username" placeholder="用户名" type="text"/>
+            <br>
+            <input name="password" placeholder="密码" type="password"/>
+            <br>
+            <button class="btn" type="submit">登 &nbsp;&nbsp; 录</button>
+        </form>
+    </div>
+<!--    <div class="form-container">-->
+<!--        <p class="title">手机验证码登陆</p>-->
+<!--        <form action="/oauth/login" method="post" name="loginForm">-->
+<!--            <input name="phone" placeholder="手机号" type="text"/>-->
+<!--            <br>-->
+<!--            <input name="code" placeholder="验证码" type="text"/>-->
+<!--            <br>-->
+<!--            <input name="username" placeholder="用户名" type="hidden" value='{"smsPhone":"18814820830","smsCode":"4776","authType":"SMS_LOGIN"}'/>-->
+<!--            <br>-->
+<!--            <input name="password" placeholder="密码" type="hidden" value="SMS_LOGIN"/>-->
+<!--            <br>-->
+<!--            <button class="btn" type="submit">登 &nbsp;&nbsp; 录</button>-->
+<!--        </form>-->
+<!--    </div>-->
+</div>
+</body>
+</html>

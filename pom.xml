@@ -5,8 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.2.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.2.6.RELEASE</version>
     </parent>
     <groupId>top.dfghhj.anhanx</groupId>
     <artifactId>anhanx</artifactId>
@@ -21,6 +20,7 @@
         <commons-beanutils.version>1.9.3</commons-beanutils.version>
         <fastjson.version>1.2.60</fastjson.version>
         <easypoi.version>3.2.0</easypoi.version>
+        <lombok.version>1.18.12</lombok.version>
 
         <!-- modules version -->
         <anhanx.version>0.0.1-SNAPSHOT</anhanx.version>
@@ -71,6 +71,11 @@
                 <groupId>cn.afterturn</groupId>
                 <artifactId>easypoi-annotation</artifactId>
                 <version>${easypoi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
